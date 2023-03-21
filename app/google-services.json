@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "537808421659",
+    "firebase_url": "https://manor-recycler-activity-default-rtdb.firebaseio.com",
+    "project_id": "manor-recycler-activity",
+    "storage_bucket": "manor-recycler-activity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537808421659:android:e1283671adda5c5f6009be",
+        "android_client_info": {
+          "package_name": "com.example.manor_recycler_activity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537808421659-osh1onouq27lqmrlrhej38j0m6h9et11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy6vk7vCnjxVRdqqp5tCRY6q5uL3g0IXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537808421659-osh1onouq27lqmrlrhej38j0m6h9et11.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

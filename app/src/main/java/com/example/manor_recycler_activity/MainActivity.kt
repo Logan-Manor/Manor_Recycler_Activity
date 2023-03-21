@@ -2,39 +2,27 @@ package com.example.manor_recycler_activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.View
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.manor_recycler_activity.data.ZodiacDatabase
+import com.example.roomdb.R
+import com.example.roomdb.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val recyclerView : RecyclerView = findViewById(R.id.recyclerView)
-
-        recyclerView.layoutManager = LinearLayoutManager(this)
-
-        val items = fetchData()
-
-        val adapter = RVAdaptor(items)
-        recyclerView.adapter = adapter
-
+        setupActionBarWithNavController(findNavController(R.id.fragment))
     }
 
-    private fun fetchData(): Array<String> {
-        return arrayOf(
-            "Aquarius",
-            "Pisces",
-            "Aries",
-            "Taurus",
-            "Gemini",
-            "Cancer",
-            "Leo",
-            "Virgo",
-            "Libra",
-            "Scorpio",
-            "Sagittarius",
-            "Capricorn"
-        )
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.fragment)
+        return super.onSupportNavigateUp() || super.onSupportNavigateUp()
     }
 }
