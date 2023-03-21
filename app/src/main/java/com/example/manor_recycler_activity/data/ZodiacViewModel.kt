@@ -6,7 +6,7 @@ import androidx.lifecycle.LiveData
 
 class ZodiacViewModel(application: Application): AndroidViewModel(application) {
 
-    private val readAllData: LiveData<List<Zodiac>>
+    val readAllData: LiveData<List<Zodiac>>
     private val repository: ZodiacRepository
 
     init {

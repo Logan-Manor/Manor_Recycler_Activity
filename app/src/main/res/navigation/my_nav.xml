@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.example.manor_recycler_activity.fragments.list.ListFragment"
-        android:label="fragment_list"
+        android:label="List"
         tools:layout="@layout/fragment_list" />
 </navigation>
